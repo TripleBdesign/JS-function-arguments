@@ -23,17 +23,27 @@ muurVerven (woonkamer);
 muurVerven (slaapkamer);
 */
 
+/* één argument 
+const muurVerven = function (kleur) {
+    console.log ("De muur is " + kleur + " geverfd.");
+
+};
+
+muurVerven ("groen");
+muurVerven ("aubergine");
+*/
 
 
 
 
-/* meerdere arguments */
-const muurVerven = function (kleur, plaats) {
+
+
+
+/* meerdere arguments  */
+const muurVerven = function (plaats, kleur) {
     console.log ("De " + plaats + " muur is " + kleur + " geverfd.");
     console.log ("De " + plaats + " muur is " + kleur + " geverfd.");
 };
 
-const kleurcode = ("oranje", "aubergine");
-const plaatscode = ("noord", "zuidoostelijke");
-
-muurVerven (kleurcode, plaatscode);
+muurVerven ("noord", "aubergine");
+muurVerven ("zuidoostelijke", "groen");
